@@ -1,29 +1,21 @@
 
-import './App.css'
-import 'bootstrap-icons/font/bootstrap-icons.css';
-import HeadSection from './components/HeadSection';
-import Courses from './components/Courses';
-import WeBestSec from "./components/WeBestSec";
-import InstructorSec from "./components/InstructorSec";
-import RegisCountdownSec from"./components/RegisCountdownSec";
-import ReviewSec from "./components/ReviewSec";
-import NewsSec from "./components/NewsSec";
-import Footer from "./components/Footer"
+import Home  from "./components/pages/home";
+import CoursesPage  from "./components/pages/courses";
+import NewsPages  from "./components/pages/news";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 function App() {
-
   return (
-    <>
-    <HeadSection />
-    <Courses/>
-    <WeBestSec/>
-    <InstructorSec/>
-    <RegisCountdownSec/>
-    <ReviewSec/>
-    <NewsSec/>
-    <Footer/>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home/>} />         {/* Default route */}
+        <Route path="/courses" element={<CoursesPage />} />
+        <Route path="/news" element={<NewsPages />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

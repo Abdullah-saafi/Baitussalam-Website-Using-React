@@ -29,7 +29,6 @@ function HeadSection() {
     <header className="bg-[url('/images/hero-img.jpeg')] h-screen bg-cover bg-no-repeat bg-center overflow-hidden">
       <div className="absolute inset-0 bg-green/70" />
 
-      {/* Navbar */}
       <nav
         ref={navRef}
         id="nav-bar"
@@ -45,7 +44,6 @@ function HeadSection() {
           </a>
         </div>
 
-        {/* Main Nav */}
         <div className="main-nav hidden lg:block">
           <ul className="items-center space-x-4 flex font-semibold">
             <li>
@@ -54,7 +52,7 @@ function HeadSection() {
               </a>
             </li>
             <li>
-              <a href="/" className="hover:text-orange duration-700">
+              <a href="/courses" className="hover:text-orange duration-700">
                 Courses
               </a>
             </li>
@@ -69,7 +67,7 @@ function HeadSection() {
               </a>
             </li>
             <li>
-              <a href="/" className="hover:text-orange duration-700">
+              <a href="/news" className="hover:text-orange duration-700">
                 News
               </a>
             </li>
@@ -84,7 +82,6 @@ function HeadSection() {
           </ul>
         </div>
 
-        {/* Side nav + menu icon */}
         <div className="side-nav flex items-center justify-center">
           <ul className="space-x-4 hidden md:flex font-semibold">
             <li>
@@ -118,7 +115,6 @@ function HeadSection() {
         </div>
       </nav>
 
-      {/* Sidebar */}
       {isSidebarOpen && (
         <div
           id="side-bar"
@@ -171,7 +167,6 @@ function HeadSection() {
         </div>
       )}
 
-      {/* Hero text */}
       <div className="Hero-text relative mt-80 ml-5 text-white md:text-5xl md:ml-20">
         <h1>
           Shape Your Future at{" "}
